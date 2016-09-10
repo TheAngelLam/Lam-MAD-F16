@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Puppies are cute!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IaA-CX-LEa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Puppies are cute!" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IaA-CX-LEa">
                                 <rect key="frame" x="163.5" y="49" width="273" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="P2m-cj-GHc"/>
@@ -36,21 +36,12 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy2-KE-h4h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy2-KE-h4h">
                                 <rect key="frame" x="283" y="537" width="33" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="183" y="537" width="33" height="17"/>
-                                </variation>
                             </label>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3-puppies" translatesAutoresizingMaskIntoConstraints="NO" id="Z7R-aK-2AA">
-                                <rect key="frame" x="166.5" y="176.5" width="266" height="333"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="66" y="176" width="266" height="333"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bs-ZF-HSj">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,16 +58,26 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" fixedFrame="YES" image="3-puppies" translatesAutoresizingMaskIntoConstraints="NO" id="Z7R-aK-2AA">
+                                <rect key="frame" x="166.5" y="176.5" width="266" height="333"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z7R-aK-2AA" secondAttribute="trailing" constant="25" id="8kJ-4n-HDb"/>
+                            <constraint firstItem="Z7R-aK-2AA" firstAttribute="top" secondItem="Vg9-wd-P3c" secondAttribute="bottom" constant="20" id="9JZ-kz-kBm"/>
+                            <constraint firstItem="oy2-KE-h4h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Ey3-sD-fkS"/>
                             <constraint firstItem="Vg9-wd-P3c" firstAttribute="top" secondItem="IaA-CX-LEa" secondAttribute="bottom" constant="20" id="O1G-2j-GLf"/>
+                            <constraint firstAttribute="trailing" secondItem="oy2-KE-h4h" secondAttribute="trailing" constant="25" id="U6R-IP-lIY"/>
+                            <constraint firstItem="Z7R-aK-2AA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Y7u-b3-bh1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oy2-KE-h4h" secondAttribute="bottom" constant="25" id="YLZ-lM-ruY"/>
                             <constraint firstItem="IaA-CX-LEa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="dLz-Gk-r64"/>
                             <constraint firstItem="Vg9-wd-P3c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="ec7-kt-9Hz"/>
                             <constraint firstItem="IaA-CX-LEa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="fkA-hM-8us"/>
                             <constraint firstItem="4bs-ZF-HSj" firstAttribute="leading" secondItem="Vg9-wd-P3c" secondAttribute="trailing" constant="10" id="ihf-Vw-gcz"/>
                             <constraint firstItem="4bs-ZF-HSj" firstAttribute="top" secondItem="IaA-CX-LEa" secondAttribute="bottom" constant="20" id="rdK-ZH-tHJ"/>
                             <constraint firstItem="4bs-ZF-HSj" firstAttribute="width" secondItem="Vg9-wd-P3c" secondAttribute="width" id="toc-h1-yMx"/>
+                            <constraint firstItem="oy2-KE-h4h" firstAttribute="top" secondItem="Z7R-aK-2AA" secondAttribute="bottom" constant="20" id="ucm-uJ-gi1"/>
                             <constraint firstAttribute="trailing" secondItem="4bs-ZF-HSj" secondAttribute="trailing" constant="25" id="ug0-Fp-zFk"/>
                             <constraint firstAttribute="trailing" secondItem="IaA-CX-LEa" secondAttribute="trailing" constant="25" id="wW1-N0-FS0"/>
                         </constraints>
@@ -86,15 +87,22 @@
                                 <exclude reference="Vg9-wd-P3c"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="dLz-Gk-r64"/>
+                                <exclude reference="fkA-hM-8us"/>
+                                <exclude reference="wW1-N0-FS0"/>
+                                <exclude reference="O1G-2j-GLf"/>
+                                <exclude reference="ec7-kt-9Hz"/>
+                                <exclude reference="8kJ-4n-HDb"/>
+                                <exclude reference="9JZ-kz-kBm"/>
+                                <exclude reference="Y7u-b3-bh1"/>
                                 <exclude reference="ihf-Vw-gcz"/>
                                 <exclude reference="rdK-ZH-tHJ"/>
                                 <exclude reference="toc-h1-yMx"/>
                                 <exclude reference="ug0-Fp-zFk"/>
-                                <exclude reference="O1G-2j-GLf"/>
-                                <exclude reference="ec7-kt-9Hz"/>
-                                <exclude reference="dLz-Gk-r64"/>
-                                <exclude reference="fkA-hM-8us"/>
-                                <exclude reference="wW1-N0-FS0"/>
+                                <exclude reference="Ey3-sD-fkS"/>
+                                <exclude reference="U6R-IP-lIY"/>
+                                <exclude reference="ucm-uJ-gi1"/>
+                                <exclude reference="YLZ-lM-ruY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -103,15 +111,22 @@
                                 <include reference="Vg9-wd-P3c"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="dLz-Gk-r64"/>
+                                <include reference="fkA-hM-8us"/>
+                                <include reference="wW1-N0-FS0"/>
+                                <include reference="O1G-2j-GLf"/>
+                                <include reference="ec7-kt-9Hz"/>
+                                <include reference="8kJ-4n-HDb"/>
+                                <include reference="9JZ-kz-kBm"/>
+                                <include reference="Y7u-b3-bh1"/>
                                 <include reference="ihf-Vw-gcz"/>
                                 <include reference="rdK-ZH-tHJ"/>
                                 <include reference="toc-h1-yMx"/>
                                 <include reference="ug0-Fp-zFk"/>
-                                <include reference="O1G-2j-GLf"/>
-                                <include reference="ec7-kt-9Hz"/>
-                                <include reference="dLz-Gk-r64"/>
-                                <include reference="fkA-hM-8us"/>
-                                <include reference="wW1-N0-FS0"/>
+                                <include reference="Ey3-sD-fkS"/>
+                                <include reference="U6R-IP-lIY"/>
+                                <include reference="ucm-uJ-gi1"/>
+                                <include reference="YLZ-lM-ruY"/>
                             </mask>
                         </variation>
                     </view>
