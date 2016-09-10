@@ -13,15 +13,6 @@ class ViewController: UIViewController {
     //Images
     @IBOutlet weak var coverImage: UIImageView!
     
-    @IBAction func chooseArt(sender: UIButton) {
-        if sender.currentTitle=="Puppies Kissing" {
-            coverImage.image=UIImage(named: "puppies-1.png")
-        }
-        else if sender.currentTitle=="Husky" {
-            coverImage.image=UIImage(named: "husky.png")
-        }
-    }
-    
     //Text
     @IBOutlet weak var displayText: UILabel!
     
@@ -29,6 +20,12 @@ class ViewController: UIViewController {
         let title = sender.titleForState(.Normal)!
         let text = "You are viewing the \"\(title)\" picture."
         displayText.text = text;
+        
+        if sender.currentTitle == "Puppies Kissing" {
+            coverImage.image = UIImage(named: "puppies-1.png")
+        } else if sender.currentTitle == "Husky" {
+            coverImage.image = UIImage(named: "husky.png")
+        }
     }
     
 
