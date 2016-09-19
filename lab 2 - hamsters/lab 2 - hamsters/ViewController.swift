@@ -33,11 +33,13 @@ class ViewController: UIViewController {
     }
     
     func updateImage(){
-        if imageControl.selectedSegmentIndex == 0 {
-            hamstersImage.image = UIImage(named: "hamster-short haired")
-        } else if imageControl.selectedSegmentIndex == 1 {
-            hamstersImage.image = UIImage(named: "hamster-long haired")
-        }
+        UIView.transitionWithView(hamstersImage, duration: 0.3, options: [.CurveEaseInOut, .TransitionCrossDissolve], animations: {
+            if self.imageControl.selectedSegmentIndex == 0 {
+                self.hamstersImage.image = UIImage(named: "hamster-short haired")
+            } else if self.imageControl.selectedSegmentIndex == 1 {
+                self.hamstersImage.image = UIImage(named: "hamster-long haired")
+            }
+        }, completion: nil)
     }
 
     @IBAction func changeFontToCaps(sender: UISwitch) {
