@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vEb-pe-nfl">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vEb-pe-nfl">
                                 <rect key="frame" x="178" y="425" width="243" height="29"/>
                                 <segments>
                                     <segment title="Short Haired"/>
@@ -28,16 +28,16 @@
                                     <action selector="imageControlPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="slB-qd-BXN"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMr-33-Ztu" userLabel="Slider Container">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mMr-33-Ztu" userLabel="Slider Container">
                                 <rect key="frame" x="178" y="468" width="243" height="30"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="15" maxValue="21" translatesAutoresizingMaskIntoConstraints="NO" id="M3b-n3-Ydn">
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="15" maxValue="21" translatesAutoresizingMaskIntoConstraints="NO" id="M3b-n3-Ydn">
                                         <rect key="frame" x="77" y="0.0" width="168" height="31"/>
                                         <connections>
                                             <action selector="changeFontSize:" destination="BYZ-38-t0r" eventType="valueChanged" id="XgZ-QS-A7W"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljt-02-XIw">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Font Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljt-02-XIw">
                                         <rect key="frame" x="0.0" y="4" width="71" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -54,34 +54,34 @@
                                     <constraint firstItem="M3b-n3-Ydn" firstAttribute="leading" secondItem="Ljt-02-XIw" secondAttribute="trailing" constant="8" id="uM4-Mf-Lfq"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a short haired hamster." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRo-fp-Wjl">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="This is a short haired hamster." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRo-fp-Wjl">
                                 <rect key="frame" x="20" y="389" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-eX-duU" userLabel="Switch Container">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-eX-duU" userLabel="Switch Container">
                                 <rect key="frame" x="178" y="513" width="243" height="77"/>
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F7S-cZ-F0F">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F7S-cZ-F0F">
                                         <rect key="frame" x="194" y="0.0" width="51" height="31"/>
                                         <connections>
                                             <action selector="changeFontToCaps:" destination="BYZ-38-t0r" eventType="valueChanged" id="XNL-Sk-m2P"/>
                                         </connections>
                                     </switch>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H4Z-8X-oMr">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H4Z-8X-oMr">
                                         <rect key="frame" x="194" y="46" width="51" height="31"/>
                                         <connections>
                                             <action selector="changeFontToBlue:" destination="BYZ-38-t0r" eventType="valueChanged" id="e9q-Ks-lZW"/>
                                         </connections>
                                     </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Captialization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rey-39-dPK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Captialization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rey-39-dPK">
                                         <rect key="frame" x="0.0" y="5" width="104" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSu-1c-EsT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Blue Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSu-1c-EsT">
                                         <rect key="frame" x="0.0" y="51" width="104" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,13 +116,13 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamsters are Adorable!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-db-CW9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Hamsters are Adorable!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ia-db-CW9">
                                 <rect key="frame" x="40" y="45" width="520" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="hamster-short haired" translatesAutoresizingMaskIntoConstraints="NO" id="6pQ-LQ-pGE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" image="hamster-short haired" translatesAutoresizingMaskIntoConstraints="NO" id="6pQ-LQ-pGE">
                                 <rect key="frame" x="20" y="90" width="560" height="284"/>
                             </imageView>
                         </subviews>
@@ -195,9 +195,6 @@
                                 <exclude reference="brO-Xl-dce"/>
                                 <exclude reference="la8-45-2oI"/>
                                 <exclude reference="njb-VI-36r"/>
-                                <exclude reference="CKe-ZX-tDj"/>
-                                <exclude reference="OHM-rI-9XR"/>
-                                <exclude reference="t3G-It-gvm"/>
                                 <exclude reference="0K5-z4-oz9"/>
                                 <exclude reference="BNb-n5-iJW"/>
                                 <exclude reference="Dw0-CP-0oC"/>
@@ -205,6 +202,9 @@
                                 <exclude reference="aEP-0j-wmc"/>
                                 <exclude reference="bIB-mU-Ijm"/>
                                 <exclude reference="tZo-rS-91R"/>
+                                <exclude reference="CKe-ZX-tDj"/>
+                                <exclude reference="OHM-rI-9XR"/>
+                                <exclude reference="t3G-It-gvm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -222,11 +222,11 @@
                                 <include reference="IrH-9b-g4L"/>
                                 <include reference="brO-Xl-dce"/>
                                 <include reference="njb-VI-36r"/>
-                                <include reference="OHM-rI-9XR"/>
-                                <include reference="t3G-It-gvm"/>
                                 <include reference="0K5-z4-oz9"/>
                                 <include reference="Dw0-CP-0oC"/>
                                 <include reference="bIB-mU-Ijm"/>
+                                <include reference="OHM-rI-9XR"/>
+                                <include reference="t3G-It-gvm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -244,11 +244,11 @@
                                 <include reference="Xfm-3I-ZAs"/>
                                 <include reference="6cY-Tv-cOI"/>
                                 <include reference="la8-45-2oI"/>
-                                <include reference="CKe-ZX-tDj"/>
                                 <include reference="BNb-n5-iJW"/>
                                 <include reference="MaD-0a-aRX"/>
                                 <include reference="aEP-0j-wmc"/>
                                 <include reference="tZo-rS-91R"/>
+                                <include reference="CKe-ZX-tDj"/>
                             </mask>
                         </variation>
                     </view>
