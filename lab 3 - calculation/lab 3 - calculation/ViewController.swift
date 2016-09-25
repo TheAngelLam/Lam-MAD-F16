@@ -89,7 +89,7 @@ extension ViewController: UITextFieldDelegate {
         return true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldDidEndEditing(textField: UITextField) {  //to view what the app is doing
         print("Text field did end editing")
     }
     
