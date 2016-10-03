@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Vacation Details View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab_4___vacation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VacationDetailsViewController" customModule="lab_4___vacation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -78,10 +78,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Scene2 View Controller-->
+        <!--Add Idea View Controller-->
         <scene sceneID="9Hp-45-C3g">
             <objects>
-                <viewController id="3le-Tx-zoF" customClass="Scene2ViewController" customModule="lab_4___vacation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3le-Tx-zoF" customClass="AddIdeaViewController" customModule="lab_4___vacation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="60e-62-BWi"/>
                         <viewControllerLayoutGuide type="bottom" id="V7k-Em-YfS"/>
@@ -185,7 +185,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="942" y="348"/>
+            <point key="canvasLocation" x="1036" y="348"/>
         </scene>
     </scenes>
 </document>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Scene2ViewController: UIViewController, UITextFieldDelegate {
+class AddIdeaViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var userState: UITextField!
     @IBOutlet weak var userCountry: UITextField!
@@ -16,15 +16,15 @@ class Scene2ViewController: UIViewController, UITextFieldDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "doneAddVacation" {
-            let scene1ViewController = segue.destinationViewController as! ViewController
+            let vacationDetailsViewController = segue.destinationViewController as! VacationDetailsViewController
             if userState.text?.isEmpty == false {
-                scene1ViewController.user.stateVaca = userState.text
+                vacationDetailsViewController.vacationIdea.stateVaca = userState.text
             }
             if userCountry.text?.isEmpty == false {
-                scene1ViewController.user.countryVaca = userCountry.text
+                vacationDetailsViewController.vacationIdea.countryVaca = userCountry.text
             }
             if userWorld.text?.isEmpty == false {
-                scene1ViewController.user.worldVaca = userWorld.text
+                vacationDetailsViewController.vacationIdea.worldVaca = userWorld.text
             }
         }
     }
