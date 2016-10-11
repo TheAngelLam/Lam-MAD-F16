@@ -155,6 +155,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //Round One
         if (numButtonPresses <= 3 && roundNumber == 1 && userAnswer?.characters.count != 0 && userAnswer == "fox") {
+            let fourthImageName = imageNamesForRound(1)[3]
+            animalImage.image = UIImage(named: fourthImageName)
+            
             cluesButton.setTitle("Next Level", forState: .Normal)
             answerTextField.hidden = true
             submitButton.hidden = true
@@ -165,6 +168,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         } else if (numButtonPresses < 3 && roundNumber == 1 && userAnswer?.characters.count != 0 && userAnswer != "fox") {
             aboveSubmitTextLabel.text = "Guess again!"
         } else if (numButtonPresses == 3 && roundNumber == 1 && userAnswer?.characters.count != 0 && userAnswer != "fox") {
+            let fourthImageName = imageNamesForRound(1)[3]
+            animalImage.image = UIImage(named: fourthImageName)
+            
             cluesButton.setTitle("Next Level", forState: .Normal)
             answerTextField.hidden = true
             submitButton.hidden = true
@@ -175,6 +181,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //Round Two
         if (numButtonPresses <= 3 && roundNumber == 2 && userAnswer?.characters.count != 0 && userAnswer == "bear") {
+            let fourthImageName = imageNamesForRound(2)[3]
+            animalImage.image = UIImage(named: fourthImageName)
+            
             cluesButton.setTitle("Next Level", forState: .Normal)
             answerTextField.hidden = true
             submitButton.hidden = true
@@ -186,6 +195,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             aboveSubmitTextLabel.text = "Guess again!"
         }
         else if (numButtonPresses == 3 && roundNumber == 2 && userAnswer?.characters.count != 0 && userAnswer != "bear") {
+            let fourthImageName = imageNamesForRound(2)[3]
+            animalImage.image = UIImage(named: fourthImageName)
+            
             cluesButton.setTitle("Next Level", forState: .Normal)
             answerTextField.hidden = true
             submitButton.hidden = true
@@ -196,6 +208,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         //Round Three
         if (numButtonPresses <= 3 && roundNumber == 3 && userAnswer?.characters.count != 0 && userAnswer == "turtle") {
+            let fourthImageName = imageNamesForRound(3)[3]
+            animalImage.image = UIImage(named: fourthImageName)
+            
             cluesButton.setTitle("Play Again", forState: .Normal)
             answerTextField.hidden = true
             submitButton.hidden = true
@@ -207,6 +222,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
             aboveSubmitTextLabel.text = "Guess again!"
         }
         else if (numButtonPresses == 3 && roundNumber == 3 && userAnswer?.characters.count != 0 && userAnswer != "turtle") {
+            let fourthImageName = imageNamesForRound(3)[3]
+            animalImage.image = UIImage(named: fourthImageName)
+
             cluesButton.setTitle("Play Again", forState: .Normal)
             answerTextField.hidden = true
             submitButton.hidden = true

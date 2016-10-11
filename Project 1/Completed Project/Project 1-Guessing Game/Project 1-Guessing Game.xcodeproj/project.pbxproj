@@ -286,6 +286,7 @@
 				7DE13ABF1DA96EDE008C598B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
