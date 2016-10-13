@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         weeklyWorkoutsLabel.text = String(numWorkouts)
     }
     
-    @IBAction func unwindSegue (segue:UIStoryboardSeque) {
+    @IBAction func unwindSegue (segue:UIStoryboardSegue) {
         
     }
     
