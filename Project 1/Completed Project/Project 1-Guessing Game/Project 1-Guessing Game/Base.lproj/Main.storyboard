@@ -170,10 +170,6 @@
                                 <exclude reference="E5u-Rg-44n"/>
                                 <exclude reference="bDb-Bn-w0x"/>
                                 <exclude reference="df5-zK-6lN"/>
-                                <exclude reference="EFZ-wr-IFX"/>
-                                <exclude reference="JKM-vb-yUk"/>
-                                <exclude reference="huR-Bq-c6b"/>
-                                <exclude reference="yUd-fK-xGy"/>
                                 <exclude reference="HVc-jN-3bk"/>
                                 <exclude reference="W2j-mF-xgf"/>
                                 <exclude reference="mIN-sJ-7oP"/>
@@ -182,14 +178,18 @@
                                 <exclude reference="dX0-55-JqN"/>
                                 <exclude reference="mf9-dj-JbI"/>
                                 <exclude reference="zvC-Q0-7jF"/>
-                                <exclude reference="vEt-Km-xcD"/>
+                                <exclude reference="EFZ-wr-IFX"/>
+                                <exclude reference="JKM-vb-yUk"/>
+                                <exclude reference="huR-Bq-c6b"/>
+                                <exclude reference="yUd-fK-xGy"/>
+                                <exclude reference="QVD-sZ-OOj"/>
+                                <exclude reference="RsE-UR-ELt"/>
+                                <exclude reference="y0G-3i-aHe"/>
                                 <exclude reference="1vB-xz-Vmg"/>
                                 <exclude reference="UQn-dC-tEe"/>
                                 <exclude reference="aji-gl-anh"/>
                                 <exclude reference="xdL-cH-d0S"/>
-                                <exclude reference="QVD-sZ-OOj"/>
-                                <exclude reference="RsE-UR-ELt"/>
-                                <exclude reference="y0G-3i-aHe"/>
+                                <exclude reference="vEt-Km-xcD"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -206,11 +206,6 @@
                                 <exclude reference="W6a-eX-44X"/>
                                 <include reference="bDb-Bn-w0x"/>
                                 <include reference="df5-zK-6lN"/>
-                                <exclude reference="GBb-5J-z8v"/>
-                                <exclude reference="Y9u-oa-FXj"/>
-                                <exclude reference="dEZ-jX-lPg"/>
-                                <include reference="huR-Bq-c6b"/>
-                                <include reference="yUd-fK-xGy"/>
                                 <exclude reference="5cZ-IJ-8kA"/>
                                 <exclude reference="9NA-NL-hIc"/>
                                 <include reference="HVc-jN-3bk"/>
@@ -224,20 +219,25 @@
                                 <exclude reference="eC2-Hc-zEI"/>
                                 <exclude reference="mf9-dj-JbI"/>
                                 <exclude reference="zvC-Q0-7jF"/>
-                                <exclude reference="GEv-hx-0ae"/>
-                                <include reference="vEt-Km-xcD"/>
-                                <include reference="1vB-xz-Vmg"/>
-                                <exclude reference="C7Q-2d-AeW"/>
-                                <exclude reference="UQn-dC-tEe"/>
-                                <include reference="aji-gl-anh"/>
-                                <exclude reference="qXF-YQ-IMn"/>
-                                <exclude reference="xdL-cH-d0S"/>
+                                <exclude reference="GBb-5J-z8v"/>
+                                <exclude reference="Y9u-oa-FXj"/>
+                                <exclude reference="dEZ-jX-lPg"/>
+                                <include reference="huR-Bq-c6b"/>
+                                <include reference="yUd-fK-xGy"/>
                                 <include reference="QVD-sZ-OOj"/>
                                 <include reference="RsE-UR-ELt"/>
                                 <exclude reference="Si7-rU-seq"/>
                                 <exclude reference="d0i-zd-gn4"/>
                                 <exclude reference="gM2-JS-gXf"/>
                                 <include reference="y0G-3i-aHe"/>
+                                <include reference="1vB-xz-Vmg"/>
+                                <exclude reference="C7Q-2d-AeW"/>
+                                <exclude reference="UQn-dC-tEe"/>
+                                <include reference="aji-gl-anh"/>
+                                <exclude reference="qXF-YQ-IMn"/>
+                                <exclude reference="xdL-cH-d0S"/>
+                                <exclude reference="GEv-hx-0ae"/>
+                                <include reference="vEt-Km-xcD"/>
                             </mask>
                         </variation>
                         <connections>
