@@ -55,6 +55,10 @@ class ViewController: UIViewController {
         weeklyWorkoutsLabel.text = String(numWorkouts)
     }
     
+    @IBAction func unwindSegue (segue:UIStoryboardSeque) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
