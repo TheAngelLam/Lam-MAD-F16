@@ -163,6 +163,9 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run" translatesAutoresizingMaskIntoConstraints="NO" id="TIP-7d-B31">
+                                <rect key="frame" x="180" y="381" width="240" height="128"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDf-PH-W0d">
                                 <rect key="frame" x="137" y="282" width="326" height="21"/>
                                 <subviews>
@@ -330,4 +333,7 @@
             <point key="canvasLocation" x="1106" y="287"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="run" width="85" height="82"/>
+    </resources>
 </document>

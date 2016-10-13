@@ -30,10 +30,22 @@ class ViewController: UIViewController {
         caloriesBurnedLabel.text = String(caloriesBurned)
     }
     
+    func checkMinWorkOutTime() {
+        let workoutTime=Int(workoutTimeTextField.text!)
+        
+        if workoutTimeTextField.text == nil || workoutTime < 30 {
+            let msg = "Enter a number greater than 30!"
+            let controller2 = UIAlertController(title: "Something is wrong!", message: msg, preferredStyle: .Alert)
+            let cancelAction = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
+            controller2.addAction(cancelAction)
+            self.presentViewController(controller2, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func calculateButton(sender: UIButton) {
+        checkMinWorkOutTime()
         updateMilesRan()
         updateCaloriesBurned()
-        weeklySwitchOn()
     }
     
     func weeklySwitchOn() {
