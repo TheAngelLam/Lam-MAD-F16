@@ -36,7 +36,7 @@
                                             <action selector="addNumWorkouts:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qpe-Yg-mdc"/>
                                         </connections>
                                     </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-3w-wET">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucg-3w-wET">
                                         <rect key="frame" x="141" y="0.0" width="50" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="B5x-7y-R1r"/>
@@ -131,7 +131,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR5-0k-mpM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR5-0k-mpM">
                                         <rect key="frame" x="256" y="0.0" width="70" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="jF8-YZ-J9V"/>
@@ -163,12 +163,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="run" translatesAutoresizingMaskIntoConstraints="NO" id="TIP-7d-B31">
-                                <rect key="frame" x="180" y="343" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="1p9-1o-7CP"/>
-                                    <constraint firstAttribute="height" constant="128" id="55d-di-SPm"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="run" translatesAutoresizingMaskIntoConstraints="NO" id="TIP-7d-B31">
+                                <rect key="frame" x="180" y="381" width="240" height="128"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FDf-PH-W0d">
                                 <rect key="frame" x="137" y="282" width="326" height="21"/>
@@ -179,7 +175,7 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-b9-r5j">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGh-b9-r5j">
                                         <rect key="frame" x="256" y="0.0" width="70" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="UwP-WA-qAA"/>
@@ -214,10 +210,8 @@
                             <constraint firstItem="HUM-r8-aze" firstAttribute="width" secondItem="oZD-Af-ttd" secondAttribute="width" id="MEr-Xz-KUE"/>
                             <constraint firstItem="oZD-Af-ttd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N6c-pe-WJc"/>
                             <constraint firstItem="oZD-Af-ttd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Nik-Xg-57c"/>
-                            <constraint firstItem="TIP-7d-B31" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qfz-X0-NoA"/>
                             <constraint firstItem="dFV-u9-Ex3" firstAttribute="width" secondItem="oZD-Af-ttd" secondAttribute="width" id="UNI-Us-glh"/>
                             <constraint firstItem="FDf-PH-W0d" firstAttribute="width" secondItem="oZD-Af-ttd" secondAttribute="width" id="akD-EE-Wwi"/>
-                            <constraint firstItem="TIP-7d-B31" firstAttribute="top" secondItem="FDf-PH-W0d" secondAttribute="bottom" constant="40" id="fn7-TA-9gz"/>
                             <constraint firstAttribute="trailing" secondItem="5ZF-nw-3hT" secondAttribute="trailing" id="hsT-QQ-rir"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ZF-nw-3hT" secondAttribute="bottom" id="oYA-Bo-3eR"/>
                             <constraint firstItem="PVt-7a-uHT" firstAttribute="top" secondItem="HUM-r8-aze" secondAttribute="bottom" constant="20" id="qKS-4g-aoD"/>
