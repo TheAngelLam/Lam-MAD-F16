@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab_6___gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Happy" translatesAutoresizingMaskIntoConstraints="NO" id="Boj-AV-1ev">
+                                <rect key="frame" x="0.0" y="0.0" width="408" height="421"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dU7-49-5lR" appends="YES" id="kDh-pQ-N9v"/>
+                                    <outletCollection property="gestureRecognizers" destination="mWr-ev-mcZ" appends="YES" id="fd5-hG-6XF"/>
+                                    <outletCollection property="gestureRecognizers" destination="KHi-JI-0uf" appends="YES" id="yEj-zT-F3W"/>
+                                    <outletCollection property="gestureRecognizers" destination="Rir-5e-jy8" appends="YES" id="kY4-Fq-UWb"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="dU7-49-5lR">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="UXe-Tm-B24"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="mWr-ev-mcZ">
+                    <connections>
+                        <action selector="handlePinch:" destination="BYZ-38-t0r" id="N68-XD-IA2"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="KHi-JI-0uf">
+                    <connections>
+                        <action selector="handleRotate:" destination="BYZ-38-t0r" id="6iH-50-jDR"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Rir-5e-jy8">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="YaM-HF-bdn"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="isy-i9-pT6"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Happy" width="136" height="140"/>
+    </resources>
+</document>
