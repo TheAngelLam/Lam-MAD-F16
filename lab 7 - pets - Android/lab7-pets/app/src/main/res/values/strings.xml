@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">lab 7 - pets</string>
+
+    <!--EditText_Name-->
+    <string name="name_edit">Your Name</string>
+    <!--TextView_Instructions-->
+    <string name="instructions_text">Fill out the following with information about your pet:</string>
+
+    <!--EditText_Pet Name-->
+    <string name="petname_edit">Your Pet\'s Name</string>
+    <!--Spinner_Type of animal-->
+    <string-array name="animal_spinner">
+        <item>dog</item>
+        <item>cat</item>
+        <item>rabbit</item>
+        <item>bird</item>
+    </string-array>
+    <!--Radio Buttons_food-->
+    <string name="food">Food:</string>
+    <string name="animalfood_radio">animal food</string>
+    <string name="humanfood_radio">human food</string>
+    <string name="anythingfood_radio">anything</string>
+    <!--Toggle_Happy or Grumpy-->
+    <string name="toggle_on">Happy</string>
+    <string name="toggle_off">Grumpy</string>
+    <!--Switch_playful-->
+    <string name="playful_switch">Playful</string>
+    <!--CheckBoxes_character-->
+    <string name="smart_check">smart</string>
+    <string name="goofy_check">goofy</string>
+    <string name="active_check">active</string>
+    <string name="lazy_check">lazy</string>
+
+    <!--button-->
+    <string name="describe_button">Describe</string>
+    <!--TextView_Pet Description-->
+    <string name="description_text"></string>
+</resources>
