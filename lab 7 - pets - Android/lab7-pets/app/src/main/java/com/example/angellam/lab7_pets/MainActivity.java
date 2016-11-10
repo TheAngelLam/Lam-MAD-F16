@@ -36,15 +36,19 @@ public class MainActivity extends AppCompatActivity {
         if (animalTypeValue.equals("dog")) {
             ImageView dog = (ImageView) findViewById(R.id.imageView);
             dog.setImageResource(R.drawable.dog);
+            //Dog image from: http://www.dognameguide.com/images/dog.gif
         } else if (animalTypeValue.equals("cat")) {
             ImageView cat = (ImageView) findViewById(R.id.imageView);
             cat.setImageResource(R.drawable.cat);
+            //Cat image from: http://pngimg.com/upload/cat_PNG106.png
         } else if (animalTypeValue.equals("rabbit")) {
             ImageView rabbit = (ImageView) findViewById(R.id.imageView);
             rabbit.setImageResource(R.drawable.rabbit);
+            //Rabbit image from: http://c2-preview.prosites.com/202897/wy/images/rabbit-pet.jpg
         } else if (animalTypeValue.equals("bird")) {
             ImageView bird = (ImageView) findViewById(R.id.imageView);
             bird.setImageResource(R.drawable.bird);
+            //Bird image from: https://www.petfinder.com/wp-content/uploads/2012/11/bird-average-bird-lifespans-thinkstock-155253666.jpg
         }
 
         //RadioGroup_type of food
