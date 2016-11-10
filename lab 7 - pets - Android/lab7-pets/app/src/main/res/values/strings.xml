@@ -30,6 +30,8 @@
     <string name="goofy_check">goofy</string>
     <string name="active_check">active</string>
     <string name="lazy_check">lazy</string>
+    <!--Image-->
+    <string name="imageContentDescription">Images of animals.</string>
 
     <!--button-->
     <string name="describe_button">Describe</string>

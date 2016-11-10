@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,6 +11,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.angellam.lab7_pets.MainActivity">
 
+    <!--Your name-->
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,103 +22,166 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <!--Instructions-->
     <TextView
         android:text="@string/instructions_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="21dp"
         android:id="@+id/instructionsTextView"
         android:layout_below="@+id/nameEditText"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="@string/description_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="28dp"
-        android:id="@+id/petDescriptionTextView" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/petname_edit"
-        android:ems="10"
-        android:layout_below="@+id/instructionsTextView"
-        android:layout_alignLeft="@+id/nameEditText"
-        android:layout_alignStart="@+id/nameEditText"
-        android:layout_marginTop="21dp"
-        android:id="@+id/petEditText" />
-
-    <Spinner
-        android:entries="@array/animal_spinner"
+    <!--Your pet's name-->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/petEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
-        android:id="@+id/animalSpinner" />
+        android:orientation="horizontal"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="20dp"
+        android:id="@+id/yourNameLinear1">
 
-    <TextView
-        android:text="@string/food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/animalSpinner"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="12dp"
-        android:id="@+id/foodTextView" />
+        <!--Your pet's name-->
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/petname_edit"
+            android:ems="10"
+            android:id="@+id/petEditText" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
+        <Spinner
+            android:entries="@array/animal_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/animalSpinner" />
+    </LinearLayout>
+
+    <!--Radio Group-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_alignTop="@+id/foodTextView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/foodRadioGroup">
-
-        <RadioButton
-            android:text="@string/animalfood_radio"
+        android:layout_below="@+id/yourNameLinear1"
+        android:id="@+id/foodRadioGroupLinear2">
+        <!--Food: - Radio Group-->
+        <TextView
+            android:text="@string/food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/animalRadioButton" />
+            android:layout_marginTop="12dp"
+            android:id="@+id/foodTextView" />
 
-        <RadioButton
-            android:text="@string/humanfood_radio"
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/humanRadioButton" />
+            android:orientation="horizontal"
+            android:id="@+id/foodRadioGroup">
 
-        <RadioButton
-            android:text="@string/anythingfood_radio"
+            <RadioButton
+                android:text="@string/animalfood_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/animalRadioButton" />
+
+            <RadioButton
+                android:text="@string/humanfood_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/humanRadioButton" />
+
+            <RadioButton
+                android:text="@string/anythingfood_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/anythingRadioButton" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!--Grumpy playful-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/foodRadioGroupLinear2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/grumpyPlayfulLinear3">
+        <ToggleButton
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/anythingRadioButton" />
-    </RadioGroup>
+            android:id="@+id/happyToggleButton" />
 
-    <Switch
-        android:text="@string/playful_switch"
+        <Switch
+            android:text="@string/playful_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/playfulSwitch"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+
+    <!--Group checkbox-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/grumpyPlayfulLinear3"
+        android:layout_marginTop="5dp"
+        android:id="@+id/checkboxGroupLinear6">
+        <!--Top-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/checkbox1Linear4">
+        <CheckBox
+            android:text="@string/smart_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/smartCheckBox" />
+
+        <CheckBox
+            android:text="@string/goofy_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/goofyCheckBox" />
+        </LinearLayout>
+        <!--Bottom-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/checkbox2Linear5">
+            <CheckBox
+                android:text="@string/active_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:id="@+id/activeCheckBox" />
+
+            <CheckBox
+                android:text="@string/lazy_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:id="@+id/lazyCheckBox" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/playfulSwitch"
-        android:layout_marginTop="16dp"
-        android:layout_below="@+id/foodRadioGroup"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ToggleButton
-        android:textOn="@string/toggle_on"
-        android:textOff="@string/toggle_off"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/happyToggleButton"
-        android:layout_alignBaseline="@+id/playfulSwitch"
-        android:layout_alignBottom="@+id/playfulSwitch"
-        android:layout_alignLeft="@+id/instructionsTextView"
-        android:layout_alignStart="@+id/instructionsTextView" />
+        android:id="@+id/imageView"
+        android:layout_below="@+id/checkboxGroupLinear6"
+        android:layout_above="@+id/describeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/imageContentDescription"/>
 
     <Button
         android:text="@string/describe_button"
@@ -127,40 +192,14 @@
         android:layout_above="@+id/petDescriptionTextView"
         android:layout_centerHorizontal="true" />
 
-    <CheckBox
-        android:text="@string/smart_check"
+    <!--Final sentence-->
+    <TextView
+        android:text="@string/description_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/happyToggleButton"
-        android:layout_alignLeft="@+id/happyToggleButton"
-        android:layout_alignStart="@+id/happyToggleButton"
-        android:layout_marginTop="16dp"
-        android:id="@+id/smartCheckBox" />
-
-    <CheckBox
-        android:text="@string/active_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/smartCheckBox"
-        android:layout_alignLeft="@+id/smartCheckBox"
-        android:layout_alignStart="@+id/smartCheckBox"
-        android:id="@+id/activeCheckBox" />
-
-    <CheckBox
-        android:text="@string/goofy_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/smartCheckBox"
-        android:layout_alignRight="@+id/instructionsTextView"
-        android:layout_alignEnd="@+id/instructionsTextView"
-        android:id="@+id/goofyCheckBox" />
-
-    <CheckBox
-        android:text="@string/lazy_check"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/activeCheckBox"
-        android:layout_alignRight="@+id/goofyCheckBox"
-        android:layout_alignEnd="@+id/goofyCheckBox"
-        android:id="@+id/lazyCheckBox" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/petDescriptionTextView" />
 </RelativeLayout>

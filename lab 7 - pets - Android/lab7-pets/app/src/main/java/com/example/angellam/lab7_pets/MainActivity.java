@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
@@ -32,6 +33,19 @@ public class MainActivity extends AppCompatActivity {
         //Spinner-Type of animal
         Spinner animalType = (Spinner) findViewById(R.id.animalSpinner);
         String animalTypeValue = String.valueOf(animalType.getSelectedItem());
+        if (animalTypeValue.equals("dog")) {
+            ImageView dog = (ImageView) findViewById(R.id.imageView);
+            dog.setImageResource(R.drawable.dog);
+        } else if (animalTypeValue.equals("cat")) {
+            ImageView cat = (ImageView) findViewById(R.id.imageView);
+            cat.setImageResource(R.drawable.cat);
+        } else if (animalTypeValue.equals("rabbit")) {
+            ImageView rabbit = (ImageView) findViewById(R.id.imageView);
+            rabbit.setImageResource(R.drawable.rabbit);
+        } else if (animalTypeValue.equals("bird")) {
+            ImageView bird = (ImageView) findViewById(R.id.imageView);
+            bird.setImageResource(R.drawable.bird);
+        }
 
         //RadioGroup_type of food
         RadioGroup food = (RadioGroup) findViewById(R.id.foodRadioGroup);
@@ -47,8 +61,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.animalRadioButton:
                 foodType = "animal food";
                 break;
+            case R.id.anythingRadioButton:
+                foodType = "anything";
+                break;
             default:
-                foodType = "nothing";
+                foodType = "animal food";
         }
 
         //Toggle-Happy or Grumpy
