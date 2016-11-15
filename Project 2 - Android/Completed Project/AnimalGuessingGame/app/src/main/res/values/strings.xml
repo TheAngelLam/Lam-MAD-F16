@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Animal Guessing Game</string>
+
+    <!--TextView_Guess the Picture!-->
+    <string name="maintitle_text">Guess the Picture!</string>
+    <!--TextView_Round count-->
+    <string name="roundcount_text"></string>
+    <!--TextView_What's your guess?-->
+    <string name="whatsyourguess_text"></string>
+    <!--User guess-->
+    <string name="userguess_edit">Your Guess</string>
+    <!--Submit button-->
+    <string name="submit_button">Submit</string>
+    <!--Clue button-->
+    <string name="clue_button">Clue</string>
+</resources>
