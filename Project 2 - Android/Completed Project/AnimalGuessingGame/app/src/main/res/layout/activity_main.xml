@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/maintitle_text"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="@color/blue"
         android:id="@+id/guessThePictureTextView"
         android:layout_alignParentTop="true"
@@ -35,13 +35,13 @@
     <!--What's your guess?-->
     <TextView
         android:text="@string/whatsyourguess_text"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/whatsYourGuessTextView"
         tools:text="What's your guess?"
         android:layout_below="@+id/roundCountTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp" />
+        android:layout_centerHorizontal="true" />
 
     <!--User guess-->
     <EditText
@@ -61,6 +61,7 @@
         android:text="@string/submit_button"
         android:background="@color/lightBlue"
         android:textColor="@color/white"
+        android:onClick="submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/userGuessEditText"
@@ -76,17 +77,18 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/fox1"
         android:id="@+id/animalImageView"
-        android:layout_marginTop="24dp"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/submitButton" />
 
     <!--Clue Button-->
     <Button
         android:text="@string/clue_button"
-        android:textSize="35dp"
+        android:textSize="35sp"
         android:background="@color/lightBlue"
         android:textColor="@color/white"
+        android:onClick="cluesButton"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:paddingLeft="70dp"
@@ -97,8 +99,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="5dp"
         android:id="@+id/clueButton" />
-
-
 
 
 </RelativeLayout>

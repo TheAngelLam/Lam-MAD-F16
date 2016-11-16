@@ -6,11 +6,13 @@
     <!--TextView_Round count-->
     <string name="roundcount_text"></string>
     <!--TextView_What's your guess?-->
-    <string name="whatsyourguess_text"></string>
+    <string name="whatsyourguess_text">What\'s your guess?</string>
     <!--User guess-->
     <string name="userguess_edit">Your Guess</string>
     <!--Submit button-->
     <string name="submit_button">Submit</string>
     <!--Clue button-->
     <string name="clue_button">Clue</string>
+    <!--Clue button - next round-->
+    <string name="next_round_button">Next Round</string>
 </resources>
