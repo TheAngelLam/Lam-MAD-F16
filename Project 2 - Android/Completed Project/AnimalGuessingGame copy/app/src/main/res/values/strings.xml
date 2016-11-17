@@ -22,7 +22,7 @@
         <!--"What's your guess?" TextView-->
         <string name="guessed_right_textview">You guessed right!</string>
         <string name="guess_again_textview">Guess again!</string>
-        <string name="fox_guessed_wrong_textview">You guessed wrong! \nThe answer is \"Fox.\"</string>
-        <string name="bear_guessed_wrong_textview">You guessed wrong! \nThe answer is \"Bear.\"</string>
-        <string name="turtle_guessed_wrong_textview">You guessed wrong! \nthe answer is \"Turtle.\"</string>
+        <string name="fox_guessed_wrong_textview">You guessed wrong! The answer is \"Fox.\"</string>
+        <string name="bear_guessed_wrong_textview">You guessed wrong! The answer is \"Bear.\"</string>
+        <string name="turtle_guessed_wrong_textview">You guessed wrong! the answer is \"Turtle.\"</string>
 </resources>
