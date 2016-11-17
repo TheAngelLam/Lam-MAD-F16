@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,24 +70,47 @@ public class MainActivity extends AppCompatActivity {
         String guess = userGuess.getText().toString().toLowerCase();
         //.toLowerCase() found here: http://stackoverflow.com/questions/30450015/how-to-convert-uppercase-letter-to-lowercase
 
-        //For "Next Round" button
-        Button title = (Button) findViewById(R.id.clueButton);
+        //For what the Button says
+        Button titleButton = (Button) findViewById(R.id.clueButton);
 
         //For hiding EditText
-        EditText hideEditText = (EditText) findViewById(R.id.userGuessEditText);
+        //EditText hideEditText = (EditText) findViewById(R.id.userGuessEditText);
 
         //For hiding "Submit" Button
-        Button hideButton = (Button) findViewById(R.id.submitButton);
+        Button hideSubmitButton = (Button) findViewById(R.id.submitButton);
+
+        //For "What's your guess?" TextView
+        TextView informText = (TextView) findViewById(R.id.whatsYourGuessTextView);
+
+        //For ImageView full animal images
+        ImageView fullImage = (ImageView) findViewById(R.id.animalImageView);
 
         //Round One
         if (numButtonPresses <= 3 && roundNumber == 1 && guess.length() != 0 && guess.equals("fox")) {
             //guess.length() from: http://stackoverflow.com/questions/38408960/how-to-check-if-an-edittext-boxs-is-empty-or-not-in-android-using-java
-            ImageView foxFull = (ImageView) findViewById(R.id.animalImageView);
-            foxFull.setImageResource(R.drawable.fox_full_image);
+            fullImage.setImageResource(R.drawable.fox_full_image);
             //Set Clues button to "Next Round"
-            title.setText(R.string.next_round_button); //.setText from: http://stackoverflow.com/questions/11536326/android-settext-r-string-values
-            hideEditText.setVisibility(view.INVISIBLE); //.setVisibility from: http://stackoverflow.com/questions/5756136/how-to-hide-a-view-programmatically
-            hideButton.setVisibility(view.INVISIBLE);
+            titleButton.setText(R.string.next_round_button); //.setText from: http://stackoverflow.com/questions/11536326/android-settext-r-string-values
+            userGuess.setVisibility(view.INVISIBLE); //.setVisibility from: http://stackoverflow.com/questions/5756136/how-to-hide-a-view-programmatically
+            hideSubmitButton.setVisibility(view.INVISIBLE);
+            informText.setText(R.string.guessed_right_textview);
+            roundOver = true;
+            roundCount += 1;
+        } else if (numButtonPresses < 3 && roundNumber == 1 && guess.length() != 0 && !guess.equals("fox")) {
+            //!guess.equals() for "not equals" from: http://stackoverflow.com/questions/16995809/opposite-of-java-equals-method
+            informText.setText(R.string.guess_again_textview);
+        } else if (numButtonPresses == 3 && roundNumber == 1 && guess.length() != 0 && !guess.equals("fox")) {
+            fullImage.setImageResource(R.drawable.fox_full_image);
+            titleButton.setText(R.string.next_round_button);
+            userGuess.setVisibility(view.INVISIBLE);
+            hideSubmitButton.setVisibility(view.INVISIBLE);
+            informText.setText(R.string.fox_guessed_wrong_textview);
+            roundOver = true;
+        }
+
+        //Round Two
+        if (numButtonPresses <=3 && roundNumber == 2 && guess.length() != 0 && guess.equals("bear")) {
+
         }
     }
 }
