@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
             titleButton.setText(R.string.play_again_button);
             userGuess.setVisibility(View.INVISIBLE);
             visibilitySubmitButton.setVisibility(View.INVISIBLE);
-            informText.setText("You guessed wrong! \nThe answer is \"Turtle.\" You got " + roundCount + " out of 3 rounds correct.");
+            informText.setText("You guessed wrong! \nThe answer is \"Turtle.\" \nYou got " + roundCount + " out of 3 rounds correct.");
             roundOver = true;
         }
     }
