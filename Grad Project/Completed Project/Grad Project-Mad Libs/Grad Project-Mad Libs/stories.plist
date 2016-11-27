@@ -63,7 +63,7 @@
 		<key>title</key>
 		<string>The Day in the Life of an Animal</string>
 		<key>story</key>
-		<string>REPLACE_1 the REPLACE_2 lives in REPLACE_3. He/She starts his/her day off by REPLACE_4 his/her REPLACE_5. During lunch he/she loves eating REPLACE_6. Then he/she spends REPLACE_7 hour(s) REPLACE_8 with his/her friends. At the end of the day, he/she drinks a cup of REPLACE_9 while he/she looks out into the plains before finally going to bed.</string>
+		<string>REPLACE_1 the REPLACE_2 lives in REPLACE_3. He/She starts his/her day off by REPLACE_4 his/her REPLACE_5. During lunch he/she loves eating REPLACE_6(s). Then he/she spends REPLACE_7 hour(s) REPLACE_8 with his/her friends. At the end of the day, he/she drinks a cup of REPLACE_9 while he/she looks out into the plains before finally going to bed.</string>
 		<key>inputs</key>
 		<array>
 			<dict>
@@ -209,7 +209,7 @@
 		<key>title</key>
 		<string>Fun Filled Fantasy</string>
 		<key>story</key>
-		<string>It has always been my dream to REPLACE_1 with REPLACE_2 in a world filled with REPLACE_3. I want it so badly I would be willing to yell out the word, “REPLACE_4,” on top of a(n) REPLACE_5 for the whole world to hear. One day, I will travel to REPLACE_6 so I can start building this world with my own two REPLACE_7.</string>
+		<string>It has always been my dream to REPLACE_1 with REPLACE_2 in a world filled with REPLACE_3. I want this so bad I would be willing to yell out the word, “REPLACE_4,” on top of a(n) REPLACE_5 for the whole world to hear. One day, I will travel to REPLACE_6 so I can start building this world with my own two REPLACE_7.</string>
 		<key>inputs</key>
 		<array>
 			<dict>
