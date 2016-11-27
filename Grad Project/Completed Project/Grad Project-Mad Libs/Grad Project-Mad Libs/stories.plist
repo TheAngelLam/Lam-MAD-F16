@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Magic Fun</string>
+		<key>story</key>
+		<string>Wizards and witches from all over travel to REPLACE_1 to attend The REPLACE_2 School of Magic. In addition to learning magic to become full fledged magic wielders, students are also expected to REPLACE_3 for hours on end. After REPLACE_4 years of training and passing the REPLACE_5 exam, students can graduate and can start REPLACE_6 for world peace.</string>
+		<key>inputs</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Proper Noun (Place)</string>
+				<key>replacement_text</key>
+				<string>REPLACE_1</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Noun</string>
+				<key>replacement_text</key>
+				<string>REPLACE_2</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Activity</string>
+				<key>replacement_text</key>
+				<string>REPLACE_3</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Number</string>
+				<key>replacement_text</key>
+				<string>REPLACE_4</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Noun</string>
+				<key>replacement_text</key>
+				<string>REPLACE_5</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Verb Ending in -ing</string>
+				<key>replacement_text</key>
+				<string>REPLACE_6</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Day in the Life of an Animal</string>
+		<key>story</key>
+		<string>REPLACE_1 the REPLACE_2 lives in REPLACE_3. He/She starts his/her day off by REPLACE_4 his/her REPLACE_5. During lunch he/she loves eating REPLACE_6. Then he/she spends REPLACE_7 hour(s) REPLACE_8 with his/her friends. At the end of the day, he/she drinks a cup of REPLACE_9 while he/she looks out into the plains before finally going to bed.</string>
+		<key>inputs</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Name</string>
+				<key>replacement_text</key>
+				<string>REPLACE_1</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Animal</string>
+				<key>replacement_text</key>
+				<string>REPLACE_2</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Proper Noun (Place)</string>
+				<key>replacement_text</key>
+				<string>REPLACE_3</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Verb Ending in -ing</string>
+				<key>replacement_text</key>
+				<string>REPLACE_4</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Part of Body</string>
+				<key>replacement_text</key>
+				<string>REPLACE_5</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Food</string>
+				<key>replacement_text</key>
+				<string>REPLACE_6</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Number</string>
+				<key>replacement_text</key>
+				<string>REPLACE_7</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Verb Ending in -ing</string>
+				<key>replacement_text</key>
+				<string>REPLACE_8</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Beverage</string>
+				<key>replacement_text</key>
+				<string>REPLACE_9</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>The Wonderful World of Imagination</string>
+		<key>story</key>
+		<string>When I was a kid, I used to journey to my imaginary world of REPLACE_1. When I was there, I would often REPLACE_2 on the REPLACE_3 of REPLACE_4. I traveled long distances, ate lots of REPLACE_5(s), and met many REPLACE_6. I would get lost in my world for REPLACE_7 hour(s) before my mom called me down to eat dinner and go to bed.</string>
+		<key>inputs</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Name (Made Up Place)</string>
+				<key>replacement_text</key>
+				<string>REPLACE_1</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Verb</string>
+				<key>replacement_text</key>
+				<string>REPLACE_2</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Body Part Plural</string>
+				<key>replacement_text</key>
+				<string>REPLACE_3</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Mythical Creature Plural</string>
+				<key>replacement_text</key>
+				<string>REPLACE_4</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Food</string>
+				<key>replacement_text</key>
+				<string>REPLACE_5</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Noun Plural</string>
+				<key>replacement_text</key>
+				<string>REPLACE_6</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Number</string>
+				<key>replacement_text</key>
+				<string>REPLACE_7</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Fun Filled Fantasy</string>
+		<key>story</key>
+		<string>It has always been my dream to REPLACE_1 with REPLACE_2 in a world filled with REPLACE_3. I want it so badly I would be willing to yell out the word, “REPLACE_4,” on top of a(n) REPLACE_5 for the whole world to hear. One day, I will travel to REPLACE_6 so I can start building this world with my own two REPLACE_7.</string>
+		<key>inputs</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>Verb</string>
+				<key>replacement_text</key>
+				<string>REPLACE_1</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Mythical Creature Plural</string>
+				<key>replacement_text</key>
+				<string>REPLACE_2</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Noun Plural</string>
+				<key>replacement_text</key>
+				<string>REPLACE_3</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Any Word</string>
+				<key>replacement_text</key>
+				<string>REPLACE_4</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Object</string>
+				<key>replacement_text</key>
+				<string>REPLACE_5</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Place</string>
+				<key>replacement_text</key>
+				<string>REPLACE_6</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>Part of Body Plural</string>
+				<key>replacement_text</key>
+				<string>REPLACE_7</string>
+				<key>user-answer</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

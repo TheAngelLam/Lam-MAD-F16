@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     //"Submit" Button
     Button visibilitySubmitButton;
 
+//    Above fixes app crash-From: http://stackoverflow.com/questions/36666091/attempt-to-invoke-virtual-method-android-view-windowcallback-android-view-wind
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -141,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Round One
         if (numButtonPresses <= 3 && roundNumber == 1 && guess.length() != 0 && guess.equals("fox")) {
-            //guess.length() from: http://stackoverflow.com/questions/38408960/how-to-check-if-an-edittext-boxs-is-empty-or-not-in-android-using-java
+            //guess.length() != 0 from: http://stackoverflow.com/questions/38408960/how-to-check-if-an-edittext-boxs-is-empty-or-not-in-android-using-java
             fullImage.setImageResource(R.drawable.fox_full_image);
             //Set Clues button to "Next Round"
             titleButton.setText(R.string.next_round_button); //.setText from: http://stackoverflow.com/questions/11536326/android-settext-r-string-values
