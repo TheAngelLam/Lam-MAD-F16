@@ -10,7 +10,9 @@ import UIKit
 
 class UserWordsViewController: UIViewController, UITextFieldDelegate {
 
+    //access dictionary, assume it's there
     var activeStory:NSDictionary!
+    //to sift through the inputs in array
     var inputNumber:Int = 0
     
     @IBOutlet weak var userWordTextField: UITextField!
@@ -28,6 +30,7 @@ class UserWordsViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //as the screen is loading
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -35,6 +38,7 @@ class UserWordsViewController: UIViewController, UITextFieldDelegate {
         wordTypeLabel.text = wordType(inputNumber)
     }
     
+    //"Next" button on keyboard
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         let userInput = userWordTextField.text?.uppercaseString
         let inputs = activeStory["inputs"] as! NSArray
@@ -58,12 +62,14 @@ class UserWordsViewController: UIViewController, UITextFieldDelegate {
         destination.activeFinishedStory = activeStory
     }
     
+    //get word type to put into label
     func wordType(number:Int) -> String {
         let inputs = activeStory["inputs"] as! NSArray
         let selectedInput = inputs[number] as! NSDictionary
         return selectedInput["type"] as! NSString as String
     }
     
+    //save the user's answer
     func saveUserInput(number:Int, userInput:String) {
         let inputs = activeStory["inputs"] as! NSArray
         let selectedInput = inputs[number] as! NSMutableDictionary

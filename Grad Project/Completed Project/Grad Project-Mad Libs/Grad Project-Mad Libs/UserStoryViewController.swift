@@ -38,7 +38,6 @@ class UserStoryViewController: UIViewController {
         
 //        finishedStoryLabel.text = activeFinishedStory["story"] as! String
         
-        
         //replace Strings from: http://stackoverflow.com/questions/24200888/any-way-to-replace-characters-on-swift-string
         var story = activeFinishedStory["story"] as! String
         let inputs = activeFinishedStory["inputs"] as! NSArray

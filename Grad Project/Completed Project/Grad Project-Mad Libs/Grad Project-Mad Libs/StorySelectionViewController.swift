@@ -35,6 +35,7 @@ class StorySelectionViewController: UIViewController {
     var stories:NSArray! = nil
     
     @IBAction func magicFunStorySelected(sender: UIButton) {
+        //set selected story
         selectedStory = stories[0] as? NSDictionary
         //fire off the segue to User Words View Controller
         performSegueWithIdentifier("segue-user-words", sender: nil)
@@ -62,16 +63,6 @@ class StorySelectionViewController: UIViewController {
         //access the plist...from: http://stackoverflow.com/questions/24045570/swift-read-plist
         let path = NSBundle.mainBundle().pathForResource("stories", ofType: "plist")!
         stories = NSMutableArray(contentsOfFile: path)
-        
-        // Example of accesssing information
-        // stories?[1]["inputs"]
-        
-        // Example of how to set selected story
-        // selectedStory = stories[0] as? NSDictionary
-        
-        // Fire off the segue to User Words
-        // performSegueWithIdentifier("segue-user-words", sender: nil)
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -81,7 +72,7 @@ class StorySelectionViewController: UIViewController {
         guard let destination = segue.destinationViewController as? UserWordsViewController else { return }
         
         //preconditionFailure from: http://stackoverflow.com/questions/29673027/difference-between-precondition-and-assert-in-swift
-        //make sure selected story has been set
+        //make sure selected story has been set so app doesn't crash
         guard let selectedStory = selectedStory else { preconditionFailure() }
         
         //set the next screen's story
