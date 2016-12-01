@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">lab 8 - restaurants</string>
+    <string name="title">Restaurant Finder</string>
+    <string name="restaurant_type_TextView">What are you looking for?</string>
+    <string name="find_restaurant_button">Find Restaurant</string>
+    <string-array name="preference">
+        <item>Atmosphere</item>
+        <item>Fine Dining</item>
+        <item>Casual</item>
+        <item>Brewery &amp; Food</item>
+        <item>Tea &amp; Food</item>
+    </string-array>
+    <string name="restaurant_ImageView">restaurant</string>
+    <string name="restaurant_rec_textview">This is your recommended restaurant.</string>
+    <string name="url_button">Go To Website</string>
+</resources>
