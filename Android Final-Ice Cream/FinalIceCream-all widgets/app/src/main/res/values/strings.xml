@@ -28,7 +28,4 @@
         <item>Salted Caramel</item>
         <item>Cookies and Cream</item>
     </string-array>
-
-    <!--Find Trea button-->
-    <string name="findtreat_button">Find Treat</string>
 </resources>

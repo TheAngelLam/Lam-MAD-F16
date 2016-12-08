@@ -3,7 +3,6 @@ package com.example.angellam.finalicecream;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -15,23 +14,10 @@ import android.widget.ToggleButton;
 
 public class FindIceCreamActivity extends AppCompatActivity {
 
-    private iceCreamShop myiceCreamShop = new iceCreamShop();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_ice_cream);
-
-        //get button
-        final Button button = (Button) findViewById(R.id.findTreatButton);
-        //listener
-        View.onClickListener onClick = new View.OnClickListener(){
-            public void onClick(View view){
-                findTreat();
-            }
-        };
-        //add listener to button
-        button.setOnClickListener(onClick);
     }
 
     public void onTreatMeButtonPressed(View view) {
@@ -124,20 +110,5 @@ public class FindIceCreamActivity extends AppCompatActivity {
         //Result TextView
         TextView iceCreamResult = (TextView) findViewById(R.id.iceCreamResultTextView);
         iceCreamResult.setText("My " + nameValue + " is a " + iceCreamValue + treatTypeValue + containerString + dairyfreeString + " with" + checkboxString);
-    }
-
-    public void findTreat(View view){
-        //get spinner
-        Spinner findTreatSpinner = (Spinner) findViewById(R.id.spinner);
-        //get spinner array position
-        Integer store = findTreatSpinner.getSelectedItemPosition();
-        //set ice cream shop
-        myiceCreamShop.setIceCreamShop(store);
-        //get suggested ice cream store
-        String suggestedIceCreamStore = myiceCreamShop.getIceCreamShop();
-        //get URL of suggested store
-        String suggestedIceCreamStoreURL = myiceCreamShop.getIceCreamShopURL();
-        System.out.println(suggestedIceCreamStore);
-        System.out.println(suggestedIceCreamStoreURL);
     }
 }
