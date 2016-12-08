@@ -34,5 +34,4 @@
 
     <!--Activity two-->
     <string name="findstore_TextView">This is your suggested ice cream store</string>
-    <string name="website_button">Go To Website</string>
 </resources>

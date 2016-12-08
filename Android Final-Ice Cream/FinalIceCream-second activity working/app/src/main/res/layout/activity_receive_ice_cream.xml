@@ -18,13 +18,4 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp"
         android:id="@+id/iceCreamShopTextView" />
-
-    <Button
-        android:text="@string/website_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/iceCreamShopTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="165dp"
-        android:id="@+id/websiteButton" />
 </RelativeLayout>
