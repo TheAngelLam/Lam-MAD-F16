@@ -3,8 +3,10 @@ package com.example.angellam.finalicecream;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -29,7 +31,7 @@ public class FindIceCreamActivity extends AppCompatActivity {
         Switch dairyfreeSwitch = (Switch) findViewById(R.id.dairyfreeSwitch);
         boolean dairyfree = dairyfreeSwitch.isChecked();
         if(dairyfree){
-            dairyfreeString = " that is dairy free.";
+            dairyfreeString = " that is dairy free";
         }
 
         //spinner
@@ -46,6 +48,46 @@ public class FindIceCreamActivity extends AppCompatActivity {
             containerString = "scoop";
         }
 
+        //radio button
+        RadioGroup treatType = (RadioGroup) findViewById(R.id.treatTypeRadioGroup);
+        String treatTypeValue = "";
+        int treatId = treatType.getCheckedRadioButtonId();
+        switch (treatId){
+            case -1:
+                treatTypeValue = " treat ";
+                break;
+            case R.id.iceCreamRadioButton1:
+                treatTypeValue = " ice cream ";
+                break;
+            case R.id.frozenYogurtRadioButton2:
+                treatTypeValue = " frozen yogurt ";
+                break;
+            case R.id.gelatoRadioButton3:
+                treatTypeValue = " gelato ";
+                break;
+            default:
+                treatTypeValue = " treat ";
+        }
+
+        //checkboxes
+        String checkboxString = "";
+        CheckBox sprinklescheck1 = (CheckBox) findViewById(R.id.sprinkleCcheckBox1);
+        boolean sprinkleschecked1 = sprinklescheck1.isChecked();
+        if(sprinkleschecked1){
+            checkboxString += " sprinkles";
+        }
+
+        CheckBox hotfudgecheck2 = (CheckBox) findViewById(R.id.hotfudgeCheckBox2);
+        boolean hotfudgechecked2 = hotfudgecheck2.isChecked();
+        if(hotfudgechecked2){
+            checkboxString += " hot fudge";
+        }
+
+        CheckBox nutscheck3 = (CheckBox) findViewById(R.id.nutsCheckBox3);
+        boolean nutschecked3 = nutscheck3.isChecked();
+        if(nutschecked3){
+            checkboxString += " nuts";
+        }
 
         //Image
         ImageView iceCreamImage = (ImageView) findViewById(R.id.iceCreamImageView);
@@ -67,6 +109,6 @@ public class FindIceCreamActivity extends AppCompatActivity {
 
         //Result TextView
         TextView iceCreamResult = (TextView) findViewById(R.id.iceCreamResultTextView);
-        iceCreamResult.setText("My " + nameValue + " is a " + iceCreamValue + " ice cream " + containerString + dairyfreeString);
+        iceCreamResult.setText("My " + nameValue + " is a " + iceCreamValue + treatTypeValue + containerString + dairyfreeString + " with" + checkboxString);
     }
 }

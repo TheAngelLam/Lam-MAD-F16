@@ -92,4 +92,64 @@
         android:layout_alignRight="@+id/dairyfreeSwitch"
         android:layout_alignEnd="@+id/dairyfreeSwitch"
         android:id="@+id/cupScoopToggleButton" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/cupScoopToggleButton"
+        android:id="@+id/treatTypeRadioGroup">
+        <RadioButton
+            android:text="@string/icecream_radiobutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iceCreamRadioButton1" />
+
+        <RadioButton
+            android:text="@string/frozenyogurt_radiobutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/frozenYogurtRadioButton2" />
+
+        <RadioButton
+            android:text="@string/gelato_radiobutton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/gelatoRadioButton3" />
+    </RadioGroup>
+
+    <CheckBox
+        android:text="@string/sprinkles_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/treatMeButton"
+        android:layout_toLeftOf="@+id/treatMeButton"
+        android:layout_toStartOf="@+id/treatMeButton"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/sprinkleCcheckBox1" />
+
+    <CheckBox
+        android:text="@string/hotfudge_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sprinkleCcheckBox1"
+        android:layout_toRightOf="@+id/sprinkleCcheckBox1"
+        android:layout_toEndOf="@+id/sprinkleCcheckBox1"
+        android:id="@+id/hotfudgeCheckBox2" />
+
+    <CheckBox
+        android:text="@string/nuts_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hotfudgeCheckBox2"
+        android:layout_toRightOf="@+id/iceCreamImageView"
+        android:layout_toEndOf="@+id/iceCreamImageView"
+        android:id="@+id/nutsCheckBox3" />
+
 </RelativeLayout>

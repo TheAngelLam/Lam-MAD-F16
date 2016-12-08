@@ -12,6 +12,16 @@
     <string name="toggle_on">Cup</string>
     <string name="toggle_off">Scoop</string>
 
+    <!--Radio Buttons-->
+    <string name="icecream_radiobutton1">ice cream</string>
+    <string name="frozenyogurt_radiobutton2">frozen yogurt</string>
+    <string name="gelato_radiobutton4">gelato</string>
+
+    <!--Checkboxes-->
+    <string name="sprinkles_checkbox">sprinkles</string>
+    <string name="hotfudge_checkbox">hot fudge</string>
+    <string name="nuts_checkbox">nuts</string>
+
     <!--Spinner-->
     <string-array name="ice_cream">
         <item>Death by Chocolate</item>
