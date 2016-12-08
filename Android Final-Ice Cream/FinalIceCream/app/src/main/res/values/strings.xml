@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FinalIceCream</string>
+    <string name="heading_textview">I Scream for Ice Cream</string>
+    <string name="treatme_button">Treat Me</string>
+    <string name="result_textview"></string>
+
+    <!--Spinner-->
+    <string-array name="ice_cream">
+        <item>Death by Chocolate</item>
+        <item>Salted Carmel</item>
+        <item>Cookies and Cream</item>
+    </string-array>
+</resources>
