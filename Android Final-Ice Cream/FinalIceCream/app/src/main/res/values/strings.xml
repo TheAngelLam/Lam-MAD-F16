@@ -7,7 +7,7 @@
     <!--Spinner-->
     <string-array name="ice_cream">
         <item>Death by Chocolate</item>
-        <item>Salted Carmel</item>
+        <item>Salted Caramel</item>
         <item>Cookies and Cream</item>
     </string-array>
 </resources>
