@@ -31,7 +31,4 @@
 
     <!--Find Trea button-->
     <string name="findtreat_button">Find Treat</string>
-
-    <!--Activity two-->
-    <string name="findstore_TextView">This is your suggested ice cream store</string>
 </resources>
