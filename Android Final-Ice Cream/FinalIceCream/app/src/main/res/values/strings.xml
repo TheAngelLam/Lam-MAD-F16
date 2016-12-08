@@ -4,6 +4,14 @@
     <string name="treatme_button">Treat Me</string>
     <string name="result_textview"></string>
 
+    <!--Edit Text-->
+    <string name="icecream_name">Name your treat</string>
+    <string name="dairyfree_switch">Dairy-free</string>
+
+    <!--Toggle-->
+    <string name="toggle_on">Cup</string>
+    <string name="toggle_off">Scoop</string>
+
     <!--Spinner-->
     <string-array name="ice_cream">
         <item>Death by Chocolate</item>
