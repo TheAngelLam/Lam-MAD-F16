@@ -24,7 +24,7 @@ class GameViewController: UIViewController {
     
     //as the screen is loading
     override func viewDidAppear(animated: Bool) {
-        //seeding a random number generator (so numbers aren't the same each time)from: http://stackoverflow.com/questions/25895081/how-does-one-seed-the-random-number-generator-in-swift
+        //seeding a random number generator (so numbers aren't the same each time) from: http://stackoverflow.com/questions/25895081/how-does-one-seed-the-random-number-generator-in-swift
         srand(UInt32(NSDate().timeIntervalSinceReferenceDate))
         inGameRoundCountLabel.text = "Round: \(currentRound)"
         startPattern()
@@ -65,16 +65,20 @@ class GameViewController: UIViewController {
         //Loop through each index in simonPattern array (get button for each step) from: http://stackoverflow.com/questions/24028421/swift-for-loop-for-index-element-in-array
         for (index, number) in simonPattern.enumerate() {
             //delay for one second after each index or else everything highlights all at once
-            delay(Double(index) + 1.0) {
+            let highlightDelay = Double(index) + 1.0
+            delay(highlightDelay) {
                 //highlight button
-                self.highlightButton(self.buttonForNumber(number), highlightDelay: index)
+                self.highlightButton(self.buttonForNumber(number))
             }
         }
     }
     
+    
     //highlight button from alpha 0.5 to alpha 1.0
     //button animation from: http://stackoverflow.com/questions/34666136/swift-how-to-make-a-button-flash-or-blink/36175309
-    func highlightButton(button:UIButton, highlightDelay:Int) {
+    func highlightButton(button:UIButton) {
+        //first number: transition time of animation
+        //second number: how long button stays at 0.5 or highlighted
         UIView.animateWithDuration(0.1, delay: 0.0, options: [], animations: {
             button.alpha = 1.0
         }) { (success) in

@@ -16,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simon Says" translatesAutoresizingMaskIntoConstraints="NO" id="Hcw-0Z-irD">
+                                <rect key="frame" x="0.0" y="92" width="600" height="417"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hcw-0Z-irD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8lO-Iw-s9m"/>
+                            <constraint firstItem="Hcw-0Z-irD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ROZ-qY-xEZ"/>
+                            <constraint firstItem="Hcw-0Z-irD" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cIV-Rw-rzX"/>
+                            <constraint firstAttribute="trailing" secondItem="Hcw-0Z-irD" secondAttribute="trailing" id="jM5-BS-SWM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +35,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Simon Says" width="750" height="417"/>
+    </resources>
 </document>
